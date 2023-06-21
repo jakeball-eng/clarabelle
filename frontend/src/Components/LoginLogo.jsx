@@ -10,6 +10,7 @@ export default function LoginLogo() {
     const [iconLeft, setIconLeft] = useState(0);
     const [iconSize, setIconSize] = useState(64);
     const [iconTop, setIconTop] = useState(0);
+    const [parentHeight, setParentHeight] = useState(0);
 
     useEffect(() => {
         const handleResize = () => {
@@ -21,6 +22,7 @@ export default function LoginLogo() {
             setCircleTop(newCircleWidth * 0.7);
             setIconLeft((window.innerWidth - iconSize) / 2);
             setIconTop(((newCircleWidth - window.innerWidth) / 2) - iconSize)
+            setParentHeight(newCircleWidth * 0.3);
         };
 
         window.addEventListener('resize', handleResize);
@@ -34,17 +36,19 @@ export default function LoginLogo() {
     }, []);
 
     return <>
-        <div style={{
-            width: `${circleWidth}px`,
-            height: `${circleWidth}px`,
-            top: `-${circleTop}px`,
-            left: `-${circleLeft}px`
-        }} className="absolute rounded-full bg-primary">
-        </div>
+        <div style={{height: `${parentHeight}px`}}>
+            <div style={{
+                width: `${circleWidth}px`,
+                height: `${circleWidth}px`,
+                top: `-${circleTop}px`,
+                left: `-${circleLeft}px`
+            }} className="absolute rounded-full bg-primary">
+            </div>
             <FontAwesomeIcon className="absolute text-white h-16" icon={faSpa} style={{
                 left: `${iconLeft}px`,
                 height: `${iconSize}px`,
                 top: `${iconTop}px`
             }} />
+        </div>
     </>
 }
