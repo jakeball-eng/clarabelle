@@ -24,8 +24,8 @@ export default function Experience()
                     <Html
                         transform
                         wrapperClass="htmlScreen"
-                        distanceFactor={ 1.17 }
-                        position={ [ 0, 1.56, 0.1 ] }
+                        distanceFactor={ 1 }
+                        position={ [ 0.16, 1.34, 0.08 ] }
                     >
                         <iframe src="http://localhost:5173" />
                     </Html>

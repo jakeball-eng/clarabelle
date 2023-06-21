@@ -1,5 +1,6 @@
 import { Canvas } from '@react-three/fiber'
 import Phone from './Components/Phone'
+import Navbar from './Components/Navbar'
 
 function App() {
 
@@ -9,6 +10,7 @@ function App() {
         <h1 className="text-3xl font-bold underline">
           Hello Small!
         </h1>
+        <Navbar />
       </div>
       <div className="hidden sm:block" id='phone'>
         <Canvas
