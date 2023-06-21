@@ -7,10 +7,24 @@ canvas
     touch-action: none;
 }
 
+body {
+    overflow: hidden;
+}
+
 .htmlScreen iframe
 {
     width: 600px;
     height: 1286px;
     border: none;
     border-radius: 4rem;
+}
+
+.semicircle {
+    aspect-ratio: 1;
+    border-radius: 9999px;
+}
+
+.semicircle-wrapper {
+    width: 150%;
+
 }

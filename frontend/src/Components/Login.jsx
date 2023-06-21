@@ -1,3 +1,8 @@
+import LoginLogo from "./LoginLogo";
+
 export default function Login() {
-    return <h1>Login</h1>
+    return <>
+        <LoginLogo />
+    </>
+    
 }
