@@ -2,15 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-#phone
-{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
 canvas
 {
     touch-action: none;
@@ -19,7 +10,7 @@ canvas
 .htmlScreen iframe
 {
     width: 600px;
-    height: 1290px;
+    height: 1286px;
     border: none;
-    border-radius: 39px;
+    border-radius: 4rem;
 }
