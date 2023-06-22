@@ -11,6 +11,7 @@ function App() {
 
   return (
     <StrictMode>
+      <div className="bg-secondary"></div>
       <div className="sm:hidden bg-background h-screen">
         <Router>
           <Routes>
